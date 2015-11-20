@@ -1676,6 +1676,7 @@ public class FmService extends Service implements FmRecorder.OnRecorderStateChan
 
     // Make sure patches count will not be 0
     private boolean isPatchMixerToEarphone(ArrayList<AudioPatch> patches) {
+    /*
         int deviceCount = 0;
         int deviceEarphoneCount = 0;
         if (mContext.getResources().getBoolean(R.bool.config_useSoftwareRenderingForAudio)) {
@@ -1704,6 +1705,9 @@ public class FmService extends Service implements FmRecorder.OnRecorderStateChan
                 return true;
             }
         }
+    */
+        Log.w(TAG, "FIXME: forcing isPatchMixerToEarphone to return false. "
+                 + "Software rendering will be used.");
         return false;
     }
 
