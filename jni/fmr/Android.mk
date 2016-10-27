@@ -32,6 +32,6 @@ LOCAL_SHARED_LIBRARIES := \
 
 LOCAL_MODULE := libfmjni
 
-ifneq ($(BOARD_USES_QCOM_HARDWARE),true)
+ifneq ($(PRODUCT_BRAND),YU)
 include $(BUILD_SHARED_LIBRARY)
 endif
